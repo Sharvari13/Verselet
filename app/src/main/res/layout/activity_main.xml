@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:background="@drawable/bgpen"
+    >
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="270dp"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/progressBar"
+        android:contentDescription="@string/bg_pic"
+        android:gravity="center"
+        app:srcCompat="@drawable/vertext" />
+
+    <TextView
+        android:id="@+id/txtAuth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/author"
+        android:fontFamily="serif-monospace"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:gravity="center"
+        android:layout_below="@id/txtAuth"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="cursive"
+        android:textSize="35sp"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+    android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Created by: Sharvari | Simant" />
+
+</RelativeLayout>
